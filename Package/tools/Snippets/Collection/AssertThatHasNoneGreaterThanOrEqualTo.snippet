@@ -1,0 +1,27 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Assert.That(actual, Has.None.GreaterThanOrEqualTo(expected))</Title>
+    <Author>Piotr Perak</Author>
+    <Shortcut>athngte</Shortcut>
+    <Description>Shortcut for Has.None.GreatherThanOrEqualTo assertion</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>actual</ID>
+        <Default>actual</Default>
+      </Literal>
+      <Literal>
+        <ID>expected</ID>
+        <Default>expected</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="CSharp">
+      <![CDATA[Assert.That($actual$, Has.None.GreaterThanOrEqualTo($expected$));
+      $end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

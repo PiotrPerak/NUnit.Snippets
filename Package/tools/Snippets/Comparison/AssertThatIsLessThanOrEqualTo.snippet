@@ -1,0 +1,27 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Assert.That(actual, Is.LessThanOrEqualTo(expected))</Title>
+    <Author>Piotr Perak</Author>
+    <Shortcut>atilte</Shortcut>
+    <Description>Shortcut for Is.LessThanOrEqualTo assertion</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>actual</ID>
+        <Default>actual</Default>
+      </Literal>
+      <Literal>
+        <ID>expected</ID>
+        <Default>expected</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="CSharp">
+      <![CDATA[Assert.That($actual$, Is.LessThanOrEqualTo($expected$));
+      $end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

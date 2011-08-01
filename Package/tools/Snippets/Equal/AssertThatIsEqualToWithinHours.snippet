@@ -1,0 +1,31 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Assert.That(actual, Is.EqualTo(expected).Within(tolerance).Hours)</Title>
+    <Author>Piotr Perak</Author>
+    <Shortcut>atiewh</Shortcut>
+    <Description>Shortcut for Is.EqualTo(expected).Within(tolerance).Hours assertion</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>actual</ID>
+        <Default>actual</Default>
+      </Literal>
+      <Literal>
+        <ID>expected</ID>
+        <Default>expected</Default>
+      </Literal>
+      <Literal>
+        <ID>tolerance</ID>
+        <Default>tolerance</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="CSharp">
+      <![CDATA[Assert.That($actual$, Is.EqualTo($expected$).Within($tolerance$).Hours);
+      $end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

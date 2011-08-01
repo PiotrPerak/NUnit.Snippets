@@ -1,0 +1,31 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Assert.That(actual, Is.All.InRange(from, to))</Title>
+    <Author>Piotr Perak</Author>
+    <Shortcut>atiair</Shortcut>
+    <Description>Shortcut for Is.All.InRange assertion</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>actual</ID>
+        <Default>array</Default>
+      </Literal>
+      <Literal>
+        <ID>from</ID>
+        <Default>from</Default>
+      </Literal>
+      <Literal>
+        <ID>to</ID>
+        <Default>to</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="CSharp">
+      <![CDATA[Assert.That($actual$, Is.All.InRange($from$, $to$));
+      $end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

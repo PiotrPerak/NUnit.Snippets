@@ -1,0 +1,27 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Assert.That(actual, Is.Not.SubPath(expectedPath))</Title>
+    <Author>Piotr Perak</Author>
+    <Shortcut>atinsubp</Shortcut>
+    <Description>Shortcut for Is.Not.SubPath assertion</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>actualPath</ID>
+        <Default>actualPath</Default>
+      </Literal>
+      <Literal>
+        <ID>expectedPath</ID>
+        <Default>expectedPath</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="CSharp">
+      <![CDATA[Assert.That($actualPath$, Is.Not.SubPath($expectedPath$));
+      $end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

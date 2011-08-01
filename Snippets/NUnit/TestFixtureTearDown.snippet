@@ -1,0 +1,26 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Test fixture teardown</Title>
+    <Author>Piotr Perak</Author>
+    <Shortcut>tft</Shortcut>
+    <Description>Shortcut for generating NUnit test fixture teardown method</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>TearDown</ID>
+        <Default>TearDown</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="CSharp">
+      <![CDATA[[TestFixtureTearDown]
+      public void $TearDown$()
+      {
+      }
+      $end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

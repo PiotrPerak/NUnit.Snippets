@@ -1,0 +1,27 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Assert.That(actual, Is.SubsetOf(expected))</Title>
+    <Author>Piotr Perak</Author>
+    <Shortcut>atiso</Shortcut>
+    <Description>Shortcut for Is.SubsetOf assertion</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>actual</ID>
+        <Default>actual</Default>
+      </Literal>
+      <Literal>
+        <ID>expected</ID>
+        <Default>expected</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="CSharp">
+      <![CDATA[Assert.That($actual$, Is.SubsetOf($expected$));
+      $end$]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

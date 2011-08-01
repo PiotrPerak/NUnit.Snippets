@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>NUnit.Snippets</id>
+    <version>0.7</version>
+    <title>NUnit.Snippets</title>
+    <authors>Piotr Perak</authors>
+    <owners>Piotr Perak</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>NUnit Visual Studio Snippets. Almost every assert is only few keystrokes away.</description>
+    <tags>NUnit Snippets</tags>
+  </metadata>
+</package>
