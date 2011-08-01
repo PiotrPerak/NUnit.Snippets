@@ -1,0 +1,109 @@
+NUNit framework snippets
+---------------------------
+add test fixture setup method												tfs	
+add test fixture teardown method											tft
+add test setup method														ts
+add test teardown method													tt
+add test method																tm
+
+All snippets start with 'at' which stands for 'Assert.That'. Next letters
+are first letters of words used in constraints most of the time.
+Once You see first few shortcuts You should be able to guess all other by yourself.
+
+EQUAL CONSTRAINTS
+---------------------------
+Assert.That(actual, Is.EqualTo(expected))									atie
+Assert.That(actual, Is.Not.EqualTo(expected))								atine
+Assert.That(actual, Is.EqualTo(expected).IgnoreCase)						atieic
+Assert.That(actual, Is.EqualTo(expected).Within(tolerance))					atiew
+Assert.That(actual, Is.EqualTo(expected).Within(tolerance).Percent)			atiewp
+Assert.That(actual, Is.EqualTo(expected).Within(tolerance).Days)			atiewd
+Assert.That(actual, Is.EqualTo(expected).Within(tolerance).Hours)			atiewh
+Assert.That(actual, Is.EqualTo(expected).Within(tolerance).Minutes)			atiewm
+Assert.That(actual, Is.EqualTo(expected).Within(tolerance).Seconds)			atiews
+Assert.That(actual, Is.EqualTo(expected).Within(tolerance).MilliSeconds)	atiewms
+Assert.That(actual, Is.EqualTo(expected).Within(tolerance).Ticks)			atiewt
+
+SAMEAS CONSTRAINTS
+---------------------------
+Assert.That(actual, Is.SameAs(expected))									atis
+Assert.That(actual, Is.Not.SameAs(expected))								atins
+
+CONDITION CONSTRAINTS
+---------------------------
+Assert.That(actual, Is.Null)												atin
+Assert.That(actual, Is.Not.Null)											atinn
+Assert.That(actual, Is.True)												atit
+Assert.That(actual, Is.False)												atif
+Assert.That(actual, Is.Empty)												atiemp
+Assert.That(actual, Is.Unique)												atiu
+
+COMPARISON CONSTRAINTS
+---------------------------
+Assert.That(actual, Is.GreaterThan(expected))								atigt
+Assert.That(actual, Is.GreaterThanOrEqual(expected))						atigte
+Assert.That(actual, Is.AtLeast(expected))									atial
+Assert.That(actual, Is.LessThan(expected))									atilt
+Assert.That(actual, Is.LessThanOrEqualTo(expected))							atilte
+Assert.That(actual, Is.AtMost(expected))									atiam
+Assert.That(actual, Is.InRange(from, to))									atiir
+Assert.That(array, Is.All.InRange(from, to))								atiair
+
+PATH CONSTRAINTS
+---------------------------
+Assert.That(path, Is.SamePath(expectedPath))								atisp
+Assert.That(path, Is.Not.SamePath(expectedPath))							atinsp
+Assert.That(path, Is.SubPath(expectedPath))									atisubp
+Assert.That(path, Is.Not.SubPath(expectedPath))								atinsubp
+Assert.That(path, Is.SamePathOrUnder(expectedPath))							atispu
+
+
+TYPE CONSTRAINTS
+---------------------------
+Assert.That(actual, Is.TypeOf(expected))									atito
+Assert.That(actual, Is.Not.TypeOf(expected))								atinto
+
+STRING CONSTRAINTS
+---------------------------
+Assert.That(actual, Is.StringContaining(expected))							atisc
+Assert.That(actual, Is.StringContaining(expected))							atiscic
+Assert.That(actual, Is.Not.StringContaining(expected))						atinsc
+Assert.That(actual, Contains.Substring(expected))							atcs
+Assert.That(actual, Contains.Substring(expected).IgnoreCase)				atcsic
+Assert.That(actual, Is.StringStarting(expected))							atiss
+Assert.That(actual, Is.StringStarting(expected).IgnoreCase)					atissic
+Assert.That(actual, Is.StringEnding(expected))								atise
+Assert.That(actual, Is.StringEnding(expected).IgnoreCase)					atiseic
+Assert.That(actual, Is.StringMatching(expected))							atism
+Assert.That(actual, Is.Not.StringMatching(expected))						atinsm
+Assert.That(actual, Has.Length.GreaterThan(expected))						atinsm
+
+COLLECTION CONSTRAINTS
+---------------------------
+Assert.That(actual, Is.SubsetOf(expected))									atiso
+Assert.That(actual, Is.Not.SubsetOf(expected))								atinso
+Assert.That(actual, Is.All.Not.Null)										atiann
+Assert.That(actual, Has.All.Not.Null)										athann
+Assert.That(actual, Is.All.GreaterThan(expected))							atiagt
+Assert.That(actual, Has.All.GreaterThan(expected))							athagt
+Assert.That(actual, Is.All.GreaterThanOrEqualTo(expected))					atiagte
+Assert.That(actual, Has.All.GreaterThanOrEqualTo(expected))					athagte
+Assert.That(actual, Is.All.LessThan(expected))								atialt
+Assert.That(actual, Has.All.LessThan(expected))								athalt
+Assert.That(actual, Is.All.LessThanOrEqualTo(expected))						atialte
+Assert.That(actual, Has.All.LessThanOrEqualTo(expected))					athalte
+Assert.That(actual, Has.None.Null)											athnn
+Assert.That(actual, Has.None.EqualTo(expected))								athne
+Assert.That(actual, Has.None.GreaterThan(expected))							athngt
+Assert.That(actual, Has.None.GreaterThanOrEqualTo(expected))				athngte
+Assert.That(actual, Has.None.LessThan(expected))							athnlt
+Assert.That(actual, Has.None.LessThanOrEqualTo(expected))					athnlte
+Assert.That(actual, Has.Member(expected))									athm
+Assert.That(actual, Has.No.Member(expected))								athnm
+Assert.That(actual, Is.Ordered)												atio
+Assert.That(actual, Is.Ordered.Descending)									atiod
+
+THROWS CONSTRAINTS
+---------------------------
+Assert.Throws<expected>(methodThrowing)										at
+
