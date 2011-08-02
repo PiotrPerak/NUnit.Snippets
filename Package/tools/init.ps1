@@ -15,6 +15,6 @@ Foreach ($vsVersion in $vsVersions)
 		  New-Item $destination -itemType "directory"
 		}
 
-		Copy-Item $source -Destination $destination -Recurse 
+		Copy-Item $source -Destination $destination -Recurse -Force
 	}
 }
