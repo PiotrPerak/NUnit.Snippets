@@ -10,6 +10,7 @@ add test fixture teardown method											tft
 add test setup method														ts
 add test teardown method													tt
 add test method																tm
+add test method async																tma
 
 EQUAL CONSTRAINTS
 ------------------------------------------------------------------------------------
