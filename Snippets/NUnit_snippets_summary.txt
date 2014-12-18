@@ -3,7 +3,8 @@ first letters of words used in constraints - most of the time.
 Once You see first few shortcuts You should be able to guess all other by yourself.
 
 NUNit framework snippets
-------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------	
+add test fixture													tf
 add test fixture setup method												tfs
 add test fixture teardown method											tft
 add test setup method														ts
