@@ -1,0 +1,27 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Test fixture setup</Title>
+    <Author>Ole Gunnar Borstad</Author>
+    <Shortcut>tf</Shortcut>
+    <Description>Shortcut for generating NUnit test fixture class</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>Fixture</ID>
+        <Default>Fixture</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="CSharp">
+      <![CDATA[[TestFixture]
+      public class $Fixture$
+      {
+        $end$
+      }	  
+      ]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>

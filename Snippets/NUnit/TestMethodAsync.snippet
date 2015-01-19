@@ -1,0 +1,27 @@
+﻿<CodeSnippet Format="1.0.0" xmlns="http://schemas.microsoft.com/VisualStudio/2005/CodeSnippet">
+  <Header>
+    <Title>Test method async</Title>
+    <Author>Ole Gunnar Borstad</Author>
+    <Shortcut>tma</Shortcut>
+    <Description>Shortcut for generating NUnit async test method</Description>
+    <SnippetTypes>
+      <SnippetType>Expansion</SnippetType>
+    </SnippetTypes>
+  </Header>
+  <Snippet>
+    <Declarations>
+      <Literal>
+        <ID>testName</ID>
+        <Default>testName</Default>
+      </Literal>
+    </Declarations>
+    <Code Language="CSharp">
+      <![CDATA[[Test]
+      public async Task $testName$()
+      {
+	  	$end$
+      }
+      ]]>
+    </Code>
+  </Snippet>
+</CodeSnippet>
