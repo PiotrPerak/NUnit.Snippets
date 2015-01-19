@@ -5,11 +5,13 @@ In order to write `Assert`s you need to create and setup your tests first. It ca
 
 # NUNit framework snippets #
 
+    add test fixture                                                            tf
     add test fixture setup method												tfs	
     add test fixture teardown method											tft
     add test setup method														ts
     add test teardown method													tt
     add test method																tm
+    add async test method														tma
 
 All `Assert` snippets start with `at` which stands for `Assert.That`. Next letters
 are first letters of words used in constraints (most of the time).
