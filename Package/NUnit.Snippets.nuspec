@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>NUnit.Snippets</id>
-    <version>1.00</version>
+    <version>1.10</version>
     <title>NUnit.Snippets</title>
     <authors>Piotr Perak</authors>
     <owners>Piotr Perak</owners>
